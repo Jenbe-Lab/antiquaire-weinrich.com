@@ -1,0 +1,33 @@
+version: '3.3'
+services:
+  mysql:
+    image: 'mysql:8'
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: 1
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    volumes:
+      - weinrich_mysql:/var/lib/mysql
+  wordpress:
+    image: 'wordpress:5.8.0-apache'
+    ports:
+      - '8080:80'
+    environment:
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_AUTH_KEY: 'VWKIz0J:N,_1w)zKF/f]X6,T*>ak?t3DtFQ0p[ZbMM0_4PRr0:b!?l2C0`;Scf&M'
+      WORDPRESS_SECURE_AUTH_KEY: '*8O(p-vBr26J%OEJCScx+8,{=[5MsWLh(S[(3g{GS3Lw}H]ldY.C8hSUri_GZc(f'
+      WORDPRESS_LOGGED_IN_KEY: 'k_[FQj,/jnveaq;7>j/<B9?CZ&=jT3Q}|?58MpLBw,NAG4kKSrIVo]FuToGU%_fP'
+      WORDPRESS_NONCE_KEY: 'M:ol=)D%y7m}wEis3=:,5PJk*d,F)^GLMHn)6}%5:u9Ls).%v,@^4r;e%;s|`4ye'
+      WORDPRESS_AUTH_SALT: 'r9SpHqx*b<&Sp/CDZtR5wAhw/bwX@1n@r(Mij*W4yZi5qnl<:to(95}&I<]3M*A1'
+      WORDPRESS_SECURE_AUTH_SALT: 'PkZ;!bbB*(0{:YXkk(w(m-:l%4iTiI?(T<_@rDA:`]ERoHTaB/>jlUXu*^)ZN@wL'
+      WORDPRESS_LOGGED_IN_SALT: 'L#H9.`LC4[RZav!=W#Ri`IYAK}[MR#^SO32c)L0#J+wD5_NfArJ{>Cu7lMK,}J{.'
+      WORDPRESS_NONCE_SALT: 'UzCe*y^fh`70}N{)&Cg7PDR)ZLJugjOxQlDX[w}Q=kuOCXlmB+R&z-<yL5}7F,no'
+    volumes:
+      - ./src:/var/www/html/wp-content/themes/weinrich
+      - ./wordpress:/var/www/html
+volumes:
+  weinrich_mysql:
