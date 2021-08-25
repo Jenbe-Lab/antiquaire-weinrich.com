@@ -11,14 +11,14 @@
     <?php wp_body_open(); ?>
 
     <div class="top">
-      Tél: <a href="tel:0658084516">06 58 08 45 16</a> -
+      Tél: <a href="tel:+33658084516">06 58 08 45 16</a> -
       Mél: <a href="mailto:antiquaireweinrich@gmail.com">mailto:antiquaireweinrich@gmail.com</a>
     </div>
 
     <header class="header">
       <a href="<?php site_url(); ?>" class="header__logo">
-        <span class="d-none">Antiquaire brocanteur<br></span>
         Weinrich Père et Fils
+        <span class="d-none"><br>Antiquaire brocanteur</span>
       </a>
 
       <?php wp_nav_menu([
