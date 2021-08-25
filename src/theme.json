@@ -9,27 +9,6 @@
           "color": "#c1a050"
         }
       ]
-    },
-    "typography": {
-      "fontFamilies": {
-      },
-      "fontSizes": [
-        {
-          "slug": "title-1",
-          "size": 64,
-          "name": "Titre 1"
-        },
-        {
-          "slug": "title-2",
-          "size": 48,
-          "name": "Titre 2"
-        },
-        {
-          "slug": "title-3",
-          "size": 32,
-          "name": "Titre 3"
-        }
-      ]
     }
   }
 }
