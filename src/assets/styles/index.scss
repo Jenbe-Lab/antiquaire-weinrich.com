@@ -37,3 +37,7 @@ h1 {
     @include make-container();
   }
 }
+
+.wp-block-button__link {
+  border-radius: 0 !important;
+}
