@@ -28,9 +28,7 @@
 
 <div class="legal">
   <div class="legal__copyright">
-    Copyright &copy; Stéphane Weinrich - 2021-
-    <script>document.write(new Date().getFullYear().toString(10))</script>
-    . Tous droits réservés.
+    Copyright &copy; Stéphane Weinrich - 2021. Tous droits réservés.
   </div>
 
   <?php wp_nav_menu([

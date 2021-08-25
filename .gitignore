@@ -2,5 +2,6 @@
 /.idea
 /.parcel-cache
 
+/creds.txt
 /src/dist
 /wordpress
