@@ -1,29 +1,30 @@
 {
-  "name": "antiquaire-weinrich.com",
+  "name": "@mathieu-bour/antiquaire-weinrich.com",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "boot": "docker-compose up -d",
-    "start": "parcel watch src/assets/styles/index.css src/assets/scripts/index.js --dist-dir src/dist",
-    "start-snow": "snowpack build --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node ./node_modules/parcel/lib/cli.js watch src/assets/styles/index.scss src/assets/scripts/index.js --dist-dir src/dist",
+    "build": "node ./node_modules/parcel/lib/cli.js build src/assets/styles/index.scss src/assets/scripts/index.js --dist-dir src/dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mathieu-bour/antiquaire-weinrich.com.git"
-  },
-  "author": "",
-  "license": "ISC",
+  "repository": "github:mathieu-bour/antiquaire-weinrich.com",
+  "author": "Mathieu Bour <mathieu.tin.bour@gmail.com>",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/mathieu-bour/antiquaire-weinrich.com/issues"
   },
   "homepage": "https://github.com/mathieu-bour/antiquaire-weinrich.com#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.0"
+  },
   "devDependencies": {
     "@csquare/prettier-config": "^1.1.2",
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
     "parcel": "^2.0.0-rc.0",
     "prettier": "^2.3.2",
-    "snowpack": "^3.8.6"
+    "sass": "^1.38.0"
   },
   "prettier": "@csquare/prettier-config",
-  "type": "module"
+  "type": "module",
+  "private": true
 }

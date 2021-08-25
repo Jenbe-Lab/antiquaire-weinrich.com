@@ -1,0 +1,68 @@
+@import 'variables';
+
+.top {
+  @include media-breakpoint-only(xs) {
+    display: none;
+  }
+
+  background-color: $primary;
+  color: #ffffff;
+  padding: 0.5rem 2rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: #000000;
+}
+
+.header__logo {
+  display: block;
+  margin: 0.5rem 0;
+  color: $primary;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 16px;
+  }
+}
+
+.header__nav {
+  @include media-breakpoint-up(sm) {
+    color: $light;
+
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu-item {
+      font-weight: 600;
+      text-transform: uppercase;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+
+    // WordPress class
+    .current-menu-item {
+      color: $primary;
+    }
+  }
+
+  @include media-breakpoint-only(xs) {
+    &:before {
+      content: '-';
+      color: $primary;
+    }
+  }
+}
