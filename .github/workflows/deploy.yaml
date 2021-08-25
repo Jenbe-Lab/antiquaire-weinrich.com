@@ -1,3 +1,4 @@
+name: Deploy to OVH
 on:
   push:
 jobs:
@@ -23,5 +24,5 @@ jobs:
           server: ftp.cluster031.hosting.ovh.net
           username: jfcpcey
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./src
-          server-dir: prod/wp-content/themes/weinrich
+          local-dir: ./src/
+          server-dir: prod/wp-content/themes/weinrich/
