@@ -4,19 +4,19 @@
       Pour tout rendez-vous ou demande d'informations supplémentaires, contactez-nous !
     </p>
 
-    <div class="footer__contact-wrapper">
-      <div class="footer__contact">
+    <div class="row">
+      <div class="col-sm-12 col-md-4 footer__contact">
         <div class="footer__contact-label">Tél.</div>
         <div class="footer__contact-value"><a href="tel:0658084516">06 58 08 45 16</a></div>
       </div>
-      <div class="footer__contact">
+      <div class="col-sm-12 col-md-4 footer__contact">
         <div class="footer__contact-label">Mél.</div>
         <div class="footer__contact-value"><a
             href="mailto:antiquaireweinrich@gmail.com">antiquaireweinrich@gmail.com</a>
         </div>
       </div>
-      <div class="footer__contact">
-        <div class="footer__contact-label">Tél.</div>
+      <div class="col-sm-12 col-md-4 footer__contact">
+        <div class="footer__contact-label">Adresse</div>
         <div class="footer__contact-value">
           8b Rue Alfred Krieger<br>
           57070 Saint-Julien-lès-Metz

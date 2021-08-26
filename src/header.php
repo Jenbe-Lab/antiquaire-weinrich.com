@@ -16,7 +16,7 @@
     </div>
 
     <header class="header">
-      <a href="<?php site_url(); ?>" class="header__logo">
+      <a href="<?php echo site_url(); ?>" class="header__logo">
         Weinrich Père et Fils
         <span class="d-none"><br>Antiquaire brocanteur</span>
       </a>
