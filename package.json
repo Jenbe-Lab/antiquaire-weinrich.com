@@ -22,7 +22,8 @@
     "@parcel/transformer-sass": "^2.0.0-rc.0",
     "parcel": "^2.0.0-rc.0",
     "prettier": "^2.3.2",
-    "sass": "^1.38.0"
+    "sass": "^1.38.0",
+    "standard-commit": "^4.2.4"
   },
   "prettier": "@csquare/prettier-config",
   "type": "module",

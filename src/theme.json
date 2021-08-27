@@ -4,6 +4,11 @@
     "color": {
       "palette": [
         {
+          "name": "Blanc",
+          "slug": "white",
+          "color": "#ffffff"
+        },
+        {
           "name": "Or",
           "slug": "gold",
           "color": "#c1a050"
