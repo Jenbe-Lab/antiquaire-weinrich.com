@@ -19,6 +19,10 @@
           "color": "#1e1d1c"
         }
       ]
+    },
+    "layout": {
+      "contentSize": "1320px",
+      "wideSize": "1320px"
     }
   }
 }
