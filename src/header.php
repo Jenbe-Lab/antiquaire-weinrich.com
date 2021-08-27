@@ -22,6 +22,7 @@
 
       <?php wp_nav_menu([
         'menu'            => 'header',
+        'theme_location'  => 'header',
         'container'       => 'nav',
         'container_class' => 'header__nav',
         'before'          => '<div class="header__nav-toggle"></div>',
