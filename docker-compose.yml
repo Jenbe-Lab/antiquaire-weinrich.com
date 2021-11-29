@@ -10,7 +10,7 @@ services:
     volumes:
       - weinrich_mysql:/var/lib/mysql
   wordpress:
-    image: 'wordpress:5.8.0-apache'
+    image: 'wordpress:5.8.2-apache'
     ports:
       - '8080:80'
     environment:

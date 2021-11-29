@@ -15,18 +15,20 @@
     </div>
 
     <header class="header">
-      <a href="<?php echo site_url(); ?>" class="header__logo">
-        Weinrich Père et Fils
-        <span class="d-none"><br>Antiquaire brocanteur</span>
-      </a>
+      <div class="header__top">
+        <a href="<?php echo site_url(); ?>" class="header__logo">
+          Weinrich Père et Fils
+          <span class="d-none"><br>Antiquaire brocanteur</span>
+        </a>
 
-      <div class="header__nav-toggle">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="34px" height="27px"
-             viewBox="0 0 34 27" xml:space="preserve">
-          <rect fill="currentColor" width="34" height="4"/>
-          <rect y="11" fill="currentColor" width="34" height="4"/>
-          <rect y="23" fill="currentColor" width="34" height="4"/>
-        </svg>
+        <div class="header__nav-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="34px" height="27px"
+               viewBox="0 0 34 27" xml:space="preserve">
+            <rect fill="currentColor" width="34" height="4"/>
+              <rect y="11" fill="currentColor" width="34" height="4"/>
+              <rect y="23" fill="currentColor" width="34" height="4"/>
+          </svg>
+        </div>
       </div>
 
       <?php wp_nav_menu([
