@@ -12,12 +12,15 @@
 
 .header {
   position: relative;
-  padding: 0 2rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #000000;
+  
+  @include media-breakpoint-up(md) {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+  }
 }
 
 .header__top {
